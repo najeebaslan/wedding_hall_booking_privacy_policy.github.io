@@ -1,1 +1,727 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية | Munasab Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #9C233F;
+            --secondary-color: #BC4F67;
+            --light-color: #f8f0f2;
+            --dark-color: #333;
+            --gray-color: #f5f5f5;
+            --border-color: #e0e0e0;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #fff;
+        }
+
+        body.ltr {
+            direction: ltr;
+            text-align: left;
+        }
+
+        body.rtl {
+            direction: rtl;
+            text-align: right;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.5rem 0;
+            position: relative;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+ .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .logo-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+  .logo-avatar img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    width: auto;
+    height: auto;
+  }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .language-toggle {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .language-toggle:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .hero {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 3rem 0;
+        }
+
+        .policy-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .policy-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .policy-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+
+        body.ltr .policy-section h2::after {
+            right: auto;
+            left: 0;
+        }
+
+        .policy-section p, .policy-section ul {
+            margin-bottom: 1rem;
+        }
+
+        .policy-section ul {
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .policy-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .last-updated {
+            font-style: italic;
+            color: #666;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        .copyright {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .policy-section {
+                padding: 1.5rem;
+            }
+            
+            .policy-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero {
+                padding: 2rem 0;
+            }
+            
+            .policy-section h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 100;
+        }
+
+        body.ltr .back-to-top {
+            left: auto;
+            right: 20px;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body class="rtl">
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Munasab Manager</a>
+                <button class="language-toggle" id="languageToggle">English</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="center-container ">
+        
+        <div class="flex justify-center items-center min-h-screen"> <!-- Centers in viewport -->
+  <div class="logo-avatar rounded-full bg-white bg-opacity-20 p-4 flex items-center justify-center overflow-hidden w-48 h-48">
+    <img 
+      src="https://firebasestorage.googleapis.com/v0/b/weddinghallbooking-2ba28.appspot.com/o/app_logo%2Fmunasab_manager_logo_with_name.png?alt=media&token=14c08b12-baf8-4c1b-94c4-371330debb07" 
+      alt="Munasab Logo" 
+      class="max-w-full max-h-full object-scale-down"
+    >
+  </div>
+</div>
+</div>
+            <h1 id="title">سياسة الخصوصية</h1>
+            <p id="subtitle">نحن في "مناسب مانجر" نقدر خصوصيتك ونلتزم بحماية بياناتك الشخصية. تشرح هذه السياسة كيفية جمع واستخدام وحماية معلوماتك.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="policy-section">
+            <h2 id="intro-title">مقدمة</h2>
+            <p id="intro-text">مرحبًا بك في سياسة الخصوصية الخاصة بتطبيق "مناسب مانجر"، وهو تطبيق شامل لإدارة الفعاليات يتيح لك إضافة خدمات الفعاليات المتخصصة الخاصة بك وعرضها للعملاء. تنطبق سياسة الخصوصية هذه على جميع المستخدمين لتطبيقنا، سواء كنت مزود خدمة أو عميلًا.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2 id="collection-title">المعلومات التي نجمعها</h2>
+            <p id="collection-text">نحن نجمع المعلومات التالية:</p>
+            <ul id="collection-list">
+                <li>المعلومات الشخصية: الاسم، البريد الإلكتروني، رقم الهاتف، العنوان.</li>
+                <li>معلومات الحساب: اسم المستخدم، كلمة المرور (مشفرة)، تفضيلات الحساب.</li>
+                <li>معلومات الخدمة: تفاصيل الخدمات التي تقدمها، الأسعار، الصور، المواقع.</li>
+                <li>معلومات المعاملات: تفاصيل الحجوزات، المدفوعات، التقييمات.</li>
+                <li>بيانات الاستخدام: كيفية تفاعلك مع التطبيق، الميزات التي تستخدمها، وقت الاستخدام.</li>
+                <li>معلومات الجهاز: نوع الجهاز، نظام التشغيل، معرفات الجهاز الفريدة.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2 id="usage-title">كيف نستخدم معلوماتك</h2>
+            <p id="usage-text">نستخدم المعلومات التي نجمعها للأغراض التالية:</p>
+            <ul id="usage-list">
+                <li>توفير وتحسين خدماتنا، بما في ذلك تخصيص تجربتك.</li>
+                <li>تسهيل التواصل بين مقدمي الخدمات والعملاء.</li>
+                <li>معالجة المعاملات والمدفوعات.</li>
+                <li>إرسال إشعارات مهمة حول حسابك أو خدماتنا.</li>
+                <li>تحليل كيفية استخدام التطبيق لتحسين ميزاته ووظائفه.</li>
+                <li>الكشف عن المشاكل الفنية ومعالجتها.</li>
+                <li>منع الأنشطة الاحتيالية أو غير المصرح بها.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2 id="sharing-title">مشاركة المعلومات</h2>
+            <p id="sharing-text">قد نشارك معلوماتك مع:</p>
+            <ul id="sharing-list">
+                <li>مستخدمي التطبيق الآخرين (مثل مشاركة معلومات مزود الخدمة مع العملاء المحتملين).</li>
+                <li>مقدمي الخدمات الذين يساعدوننا في تشغيل التطبيق (مثل خدمات الدفع، استضافة البيانات).</li>
+                <li>السلطات القانونية عند الاقتضاء بموجب القانون.</li>
+            </ul>
+            <p id="sharing-text-2">نحن لا نبيع معلوماتك الشخصية لأطراف ثالثة.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2 id="security-title">أمان البيانات</h2>
+            <p id="security-text">نحن نتخذ تدابير أمنية معقولة لحماية معلوماتك من الوصول غير المصرح به أو الإفصاح عنها. تشمل هذه التدابير:</p>
+            <ul id="security-list">
+                <li>تشفير البيانات الحساسة.</li>
+                <li>مراجعات أمنية منتظمة لأنظمتنا.</li>
+                <li>تقييد الوصول إلى المعلومات الشخصية للموظفين المصرح لهم فقط.</li>
+                <li>استخدام خوادم آمنة وجدران حماية.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2 id="rights-title">حقوقك</h2>
+            <p id="rights-text">لديك الحقوق التالية فيما يتعلق بمعلوماتك الشخصية:</p>
+            <ul id="rights-list">
+                <li>الوصول إلى معلوماتك الشخصية التي نحتفظ بها.</li>
+                <li>تصحيح أي معلومات غير دقيقة أو غير كاملة.</li>
+                <li>طلب حذف معلوماتك الشخصية.</li>
+                <li>الاعتراض على معالجة معلوماتك.</li>
+                <li>طلب تقييد معالجة معلوماتك.</li>
+                <li>طلب نقل معلوماتك إلى خدمة أخرى.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2 id="cookies-title">ملفات تعريف الارتباط</h2>
+            <p id="cookies-text">نستخدم ملفات تعريف الارتباط وتقنيات مماثلة لتحسين تجربتك وجمع معلومات حول كيفية استخدامك للتطبيق. يمكنك التحكم في إعدادات ملفات تعريف الارتباط من خلال إعدادات المتصفح الخاص بك.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2 id="children-title">خصوصية الأطفال</h2>
+            <p id="children-text">لا يستهدف تطبيقنا الأطفال دون سن 16 عامًا، ولا نجمع عن قصد معلومات شخصية من الأطفال دون هذا العمر. إذا كنت تعتقد أننا قد جمعنا معلومات من طفل دون سن 16 عامًا، يرجى الاتصال بنا.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2 id="changes-title">التغييرات على سياسة الخصوصية</h2>
+            <p id="changes-text">قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سنخطرك بأي تغييرات مهمة من خلال نشر السياسة الجديدة على التطبيق أو عن طريق إرسال إشعار لك.</p>
+        </section>
+
+       <section class="policy-section">
+            <h2 id="delete-account-title">حذف الحساب</h2>
+            <p id="delete-account-text">إذا كنت ترغب في حذف حسابك، يمكنك اتباع الخطوات التالية:</p>
+            <ol id="delete-account-list">
+                <li>انتقل إلى علامة تبويب الملف الشخصي</li>
+                <li>انقر على زر "حذف الحساب"</li>
+                <li>اتبع التعليمات التي ستظهر لك</li>
+            </ol>
+            <p id="delete-account-note">بعد حذف حسابك، سيتم حذف جميع بياناتك الشخصية من أنظمتنا خلال 30 يومًا. قد نحتفظ ببعض المعلومات إذا كان ذلك مطلوبًا قانونًا.</p>
+        </section>
+
+        <p class="last-updated" id="last-updated">آخر تحديث: 8 مايو 2025</p>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Munasab Manager</div>
+           
+                <div class="copyright" id="copyright">© 2025 مناسب مانجر. جميع الحقوق محفوظة.</div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">↑</div>
+
+    <script>
+        // Language toggle functionality
+        const languageToggle = document.getElementById('languageToggle');
+        const body = document.body;
+        
+        // Elements to translate
+        const translations = {
+            ar: {
+                languageToggle: 'English',
+                title: 'سياسة الخصوصية',
+                subtitle: 'نحن في "مناسب مانجر" نقدر خصوصيتك ونلتزم بحماية بياناتك الشخصية. تشرح هذه السياسة كيفية جمع واستخدام وحماية معلوماتك.',
+                introTitle: 'مقدمة',
+                introText: 'مرحبًا بك في سياسة الخصوصية الخاصة بتطبيق "مناسب مانجر"، وهو تطبيق شامل لإدارة الفعاليات يتيح لك إضافة خدمات الفعاليات المتخصصة الخاصة بك وعرضها للعملاء. تنطبق سياسة الخصوصية هذه على جميع المستخدمين لتطبيقنا، سواء كنت مزود خدمة أو عميلًا.',
+                collectionTitle: 'المعلومات التي نجمعها',
+                collectionText: 'نحن نجمع المعلومات التالية:',
+                collectionList: [
+                    'المعلومات الشخصية: الاسم، البريد الإلكتروني، رقم الهاتف، العنوان.',
+                    'معلومات الحساب: اسم المستخدم، كلمة المرور (مشفرة)، تفضيلات الحساب.',
+                    'معلومات الخدمة: تفاصيل الخدمات التي تقدمها، الأسعار، الصور، المواقع.',
+                    'معلومات المعاملات: تفاصيل الحجوزات، المدفوعات، التقييمات.',
+                    'بيانات الاستخدام: كيفية تفاعلك مع التطبيق، الميزات التي تستخدمها، وقت الاستخدام.',
+                    'معلومات الجهاز: نوع الجهاز، نظام التشغيل، معرفات الجهاز الفريدة.'
+                ],
+                usageTitle: 'كيف نستخدم معلوماتك',
+                usageText: 'نستخدم المعلومات التي نجمعها للأغراض التالية:',
+                usageList: [
+                    'توفير وتحسين خدماتنا، بما في ذلك تخصيص تجربتك.',
+                    'تسهيل التواصل بين مقدمي الخدمات والعملاء.',
+                    'معالجة المعاملات والمدفوعات.',
+                    'إرسال إشعارات مهمة حول حسابك أو خدماتنا.',
+                    'تحليل كيفية استخدام التطبيق لتحسين ميزاته ووظائفه.',
+                    'الكشف عن المشاكل الفنية ومعالجتها.',
+                    'منع الأنشطة الاحتيالية أو غير المصرح بها.'
+                ],
+                sharingTitle: 'مشاركة المعلومات',
+                sharingText: 'قد نشارك معلوماتك مع:',
+                sharingList: [
+                    'مستخدمي التطبيق الآخرين (مثل مشاركة معلومات مزود الخدمة مع العملاء المحتملين).',
+                    'مقدمي الخدمات الذين يساعدوننا في تشغيل التطبيق (مثل خدمات الدفع، استضافة البيانات).',
+                    'السلطات القانونية عند الاقتضاء بموجب القانون.'
+                ],
+                sharingText2: 'نحن لا نبيع معلوماتك الشخصية لأطراف ثالثة.',
+                securityTitle: 'أمان البيانات',
+                securityText: 'نحن نتخذ تدابير أمنية معقولة لحماية معلوماتك من الوصول غير المصرح به أو الإفصاح عنها. تشمل هذه التدابير:',
+                securityList: [
+                    'تشفير البيانات الحساسة.',
+                    'مراجعات أمنية منتظمة لأنظمتنا.',
+                    'تقييد الوصول إلى المعلومات الشخصية للموظفين المصرح لهم فقط.',
+                    'استخدام خوادم آمنة وجدران حماية.'
+                ],
+                rightsTitle: 'حقوقك',
+                rightsText: 'لديك الحقوق التالية فيما يتعلق بمعلوماتك الشخصية:',
+                rightsList: [
+                    'الوصول إلى معلوماتك الشخصية التي نحتفظ بها.',
+                    'تصحيح أي معلومات غير دقيقة أو غير كاملة.',
+                    'طلب حذف معلوماتك الشخصية.',
+                    'الاعتراض على معالجة معلوماتك.',
+                    'طلب تقييد معالجة معلوماتك.',
+                    'طلب نقل معلوماتك إلى خدمة أخرى.'
+                ],
+                cookiesTitle: 'ملفات تعريف الارتباط',
+                cookiesText: 'نستخدم ملفات تعريف الارتباط وتقنيات مماثلة لتحسين تجربتك وجمع معلومات حول كيفية استخدامك للتطبيق. يمكنك التحكم في إعدادات ملفات تعريف الارتباط من خلال إعدادات المتصفح الخاص بك.',
+                childrenTitle: 'خصوصية الأطفال',
+                childrenText: 'لا يستهدف تطبيقنا الأطفال دون سن 16 عامًا، ولا نجمع عن قصد معلومات شخصية من الأطفال دون هذا العمر. إذا كنت تعتقد أننا قد جمعنا معلومات من طفل دون سن 16 عامًا، يرجى الاتصال بنا.',
+                changesTitle: 'التغييرات على سياسة الخصوصية',
+                changesText: 'قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سنخطرك بأي تغييرات مهمة من خلال نشر السياسة الجديدة على التطبيق أو عن طريق إرسال إشعار لك.',
+                contactTitle: 'اتصل بنا',
+                contactText: 'إذا كانت لديك أي أسئلة أو مخاوف بشأن سياسة الخصوصية الخاصة بنا، يرجى الاتصال بنا على:',
+                contactList: [
+                    'البريد الإلكتروني: privacy@munasabmanager.com',
+                    'الهاتف: +966 123 456 789'
+                ],
+                   deleteAccountTitle: 'حذف الحساب',
+                deleteAccountText: 'إذا كنت ترغب في حذف حسابك، يمكنك اتباع الخطوات التالية:',
+                deleteAccountList: [
+                    'انتقل إلى علامة تبويب الملف الشخصي',
+                    'انقر على زر "حذف الحساب"',
+                    'اتبع التعليمات التي ستظهر لك'
+                ],
+                deleteAccountNote: 'بعد حذف حسابك، سيتم حذف جميع بياناتك الشخصية من أنظمتنا خلال 30 يومًا. قد نحتفظ ببعض المعلومات إذا كان ذلك مطلوبًا قانونًا.',
+                lastUpdated: 'آخر تحديث: 8 مايو 2025',
+                homeLink: 'الرئيسية',
+                aboutLink: 'عن التطبيق',
+                termsLink: 'شروط الاستخدام',
+                contactLink: 'اتصل بنا',
+                copyright: '© 2025 مناسب مانجر. جميع الحقوق محفوظة.'
+            },
+            en: {
+                languageToggle: 'العربية',
+                title: 'Privacy Policy',
+                subtitle: 'At "Munasab Manager", we value your privacy and are committed to protecting your personal data. This policy explains how we collect, use, and protect your information.',
+                introTitle: 'Introduction',
+                introText: 'Welcome to the privacy policy of "Munasab Manager" app, a comprehensive event management application that allows you to add your specialized event services and showcase them to clients. This privacy policy applies to all users of our application, whether you are a service provider or a client.',
+                collectionTitle: 'Information We Collect',
+                collectionText: 'We collect the following information:',
+                collectionList: [
+                    'Personal information: Name, email, phone number, address.',
+                    'Account information: Username, password (encrypted), account preferences.',
+                    'Service information: Details of services you offer, prices, images, locations.',
+                    'Transaction information: Booking details, payments, ratings.',
+                    'Usage data: How you interact with the app, features you use, time of use.',
+                    'Device information: Device type, operating system, unique device identifiers.'
+                ],
+                usageTitle: 'How We Use Your Information',
+                usageText: 'We use the information we collect for the following purposes:',
+                usageList: [
+                    'To provide and improve our services, including personalizing your experience.',
+                    'To facilitate communication between service providers and clients.',
+                    'To process transactions and payments.',
+                    'To send important notifications about your account or our services.',
+                    'To analyze how the app is used to improve its features and functionality.',
+                    'To detect and address technical issues.',
+                    'To prevent fraudulent or unauthorized activities.'
+                ],
+                sharingTitle: 'Information Sharing',
+                sharingText: 'We may share your information with:',
+                sharingList: [
+                    'Other app users (such as sharing service provider information with potential clients).',
+                    'Service providers who help us operate the app (such as payment services, data hosting).',
+                    'Legal authorities when required by law.'
+                ],
+                sharingText2: 'We do not sell your personal information to third parties.',
+                securityTitle: 'Data Security',
+                securityText: 'We take reasonable security measures to protect your information from unauthorized access or disclosure. These measures include:',
+                securityList: [
+                    'Encryption of sensitive data.',
+                    'Regular security reviews of our systems.',
+                    'Restricting access to personal information to authorized personnel only.',
+                    'Using secure servers and firewalls.'
+                ],
+                 deleteAccountTitle: 'Account Deletion',
+                deleteAccountText: 'If you wish to delete your account, you can follow these steps:',
+                deleteAccountList: [
+                    'Go to profile tab',
+                    'Click button "Delete Account"',
+                    'Follow the instructions that will appear to you'
+                ],
+                deleteAccountNote: 'After deleting your account, all your personal data will be removed from our systems within 30 days. We may retain some information if required by law.',
+                rightsTitle: 'Your Rights',
+                rightsText: 'You have the following rights regarding your personal information:',
+                rightsList: [
+                    'Access to your personal information that we hold.',
+                    'Correction of any inaccurate or incomplete information.',
+                    'Request deletion of your personal information.',
+                    'Object to the processing of your information.',
+                    'Request restriction of processing your information.',
+                    'Request transfer of your information to another service.'
+                ],
+                cookiesTitle: 'Cookies',
+                cookiesText: 'We use cookies and similar technologies to enhance your experience and collect information about how you use the app. You can control cookie settings through your browser settings.',
+                childrenTitle: 'Children\'s Privacy',
+                childrenText: 'Our app is not targeted at children under the age of 16, and we do not knowingly collect personal information from children under this age. If you believe we have collected information from a child under 16, please contact us.',
+                changesTitle: 'Changes to Privacy Policy',
+                changesText: 'We may update this privacy policy from time to time. We will notify you of any significant changes by posting the new policy on the app or by sending you a notification.',
+                contactTitle: 'Contact Us',
+                contactText: 'If you have any questions or concerns about our privacy policy, please contact us at:',
+                contactList: [
+                    'Email: privacy@munasabmanager.com',
+                    'Phone: +966 123 456 789'
+                ],
+                lastUpdated: 'Last updated: May 8, 2025',
+                homeLink: 'Home',
+                aboutLink: 'About',
+                termsLink: 'Terms of Use',
+                contactLink: 'Contact Us',
+                copyright: '© 2025 Munasab Manager. All rights reserved.'
+            }
+        };
+
+        // Function to update text content
+        function updateTextContent(lang) {
+            document.getElementById('title').textContent = translations[lang].title;
+            document.getElementById('subtitle').textContent = translations[lang].subtitle;
+            document.getElementById('intro-title').textContent = translations[lang].introTitle;
+            document.getElementById('intro-text').textContent = translations[lang].introText;
+            document.getElementById('delete-account-title').textContent = translations[lang].deleteAccountTitle;
+            document.getElementById('delete-account-text').textContent = translations[lang].deleteAccountText;
+            document.getElementById('delete-account-list').textContent = translations[lang].deleteAccountList;
+            document.getElementById('delete-account-note').textContent = translations[lang].deleteAccountNote;
+            document.getElementById('collection-title').textContent = translations[lang].collectionTitle;
+            document.getElementById('collection-text').textContent = translations[lang].collectionText;
+            
+            const collectionList = document.getElementById('collection-list');
+            collectionList.innerHTML = '';
+            translations[lang].collectionList.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                collectionList.appendChild(li);
+            });
+            
+            document.getElementById('usage-title').textContent = translations[lang].usageTitle;
+            document.getElementById('usage-text').textContent = translations[lang].usageText;
+            
+            const usageList = document.getElementById('usage-list');
+            usageList.innerHTML = '';
+            translations[lang].usageList.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                usageList.appendChild(li);
+            });
+            
+            document.getElementById('sharing-title').textContent = translations[lang].sharingTitle;
+            document.getElementById('sharing-text').textContent = translations[lang].sharingText;
+            
+            const sharingList = document.getElementById('sharing-list');
+            sharingList.innerHTML = '';
+            translations[lang].sharingList.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                sharingList.appendChild(li);
+            });
+            
+            document.getElementById('sharing-text-2').textContent = translations[lang].sharingText2;
+            document.getElementById('security-title').textContent = translations[lang].securityTitle;
+            document.getElementById('security-text').textContent = translations[lang].securityText;
+            
+            const securityList = document.getElementById('security-list');
+            securityList.innerHTML = '';
+            translations[lang].securityList.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                securityList.appendChild(li);
+            });
+            
+            document.getElementById('rights-title').textContent = translations[lang].rightsTitle;
+            document.getElementById('rights-text').textContent = translations[lang].rightsText;
+            
+            const rightsList = document.getElementById('rights-list');
+            rightsList.innerHTML = '';
+            translations[lang].rightsList.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                rightsList.appendChild(li);
+            });
+            
+            document.getElementById('cookies-title').textContent = translations[lang].cookiesTitle;
+            document.getElementById('cookies-text').textContent = translations[lang].cookiesText;
+            document.getElementById('children-title').textContent = translations[lang].childrenTitle;
+            document.getElementById('children-text').textContent = translations[lang].childrenText;
+            document.getElementById('changes-title').textContent = translations[lang].changesTitle;
+            document.getElementById('copyright').textContent = translations[lang].copyright;
+            document.getElementById('last-updated').textContent = translations[lang].lastUpdated;
+            document.getElementById('changes-text').textContent = translations[lang].changesText;
+            document.getElementById('contact-title').textContent = translations[lang].contactTitle;
+            document.getElementById('contact-text').textContent = translations[lang].contactText;
+            
+            const contactList = document.getElementById('contact-list');
+            contactList.innerHTML = '';
+            translations[lang].contactList.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                contactList.appendChild(li);
+            });
+            
+            document.getElementById('last-updated').textContent = translations[lang].lastUpdated;
+            document.getElementById('home-link').textContent = translations[lang].homeLink;
+            document.getElementById('about-link').textContent = translations[lang].aboutLink;
+            document.getElementById('terms-link').textContent = translations[lang].termsLink;
+            document.getElementById('contact-link').textContent = translations[lang].contactLink;
+            document.getElementById('copyright').textContent = translations[lang].copyright;
+            document.getElementById('languageToggle').textContent = translations[lang].languageToggle;
+        }
+
+        // Toggle language
+        languageToggle.addEventListener('click', function() {
+            if (body.classList.contains('rtl')) {
+                body.classList.remove('rtl');
+                body.classList.add('ltr');
+                document.documentElement.setAttribute('lang', 'en');
+                updateTextContent('en');
+            } else {
+                body.classList.remove('ltr');
+                body.classList.add('rtl');
+                document.documentElement.setAttribute('lang', 'ar');
+                updateTextContent('ar');
+            }
+        });
+
+        // Back to top button functionality
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
